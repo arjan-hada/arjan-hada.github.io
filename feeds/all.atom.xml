@@ -8979,10 +8979,10 @@ $$fraction\_from\_poi =\frac{number\ of\ emails\ from\ POI\ to\ this\ person}{to
 &lt;/div&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div id="e50ca3d1-e1f5-4c86-8143-cb242d8340b5"&gt;&lt;/div&gt;
+&lt;div id="bfdf356d-0bf1-426f-a20c-6f6215066a17"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#e50ca3d1-e1f5-4c86-8143-cb242d8340b5');
+var element = $('#bfdf356d-0bf1-426f-a20c-6f6215066a17');
 
 (function(global) {
   function now() {
