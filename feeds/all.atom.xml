@@ -5394,7 +5394,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img alt="Free_trial_screener" src="images/experiment_screenshot.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/0ByAfiG8HpNUMakVrS0s4cGN2TjQ/view"&gt;&lt;img alt="Free_trial_screener" src="images/experiment_screenshot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7634,10 +7634,10 @@ $$fraction\_from\_poi =\frac{number\ of\ emails\ from\ POI\ to\ this\ person}{to
 &lt;/div&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div id="df1f4356-40b4-421f-96da-fdbd18403925"&gt;&lt;/div&gt;
+&lt;div id="eaa98c38-42f2-4782-b106-31d2267fe963"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#df1f4356-40b4-421f-96da-fdbd18403925');
+var element = $('#eaa98c38-42f2-4782-b106-31d2267fe963');
 
 (function(global) {
   function now() {
