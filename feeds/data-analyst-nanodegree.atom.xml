@@ -5386,8 +5386,15 @@ h6:hover .anchor-link {
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Udacity is considering online experiments to test potential improvements to their website. Two versions of the website are shown to different users - usually the existing website and a potential change. My goal is to design and analyze an A/B test and write up a recommendation on whether Udacity should introduce a new version of the website.&lt;/p&gt;
 &lt;p&gt;The project involves choosing and characterize metrics to evaluate experiments, designing an experiment with enough statistical power, analyzing the results and draw valid conclusions, and ensuring that the participants of experiments are adequately protected.&lt;/p&gt;
-&lt;p&gt;Here is a screenshot of what the experiments look like:-
-&lt;img alt="Free trial screener" src="images/experiment_screenshot.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Here is a screenshot of what the experiments look like:-&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;img alt="Free trial screener" src="images/experiment_screenshot.png" /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -7627,10 +7634,10 @@ $$fraction\_from\_poi =\frac{number\ of\ emails\ from\ POI\ to\ this\ person}{to
 &lt;/div&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div id="5f442960-f6d8-41ea-bf28-f1322e9eaff1"&gt;&lt;/div&gt;
+&lt;div id="f461be4f-2a57-44df-af77-a24c2ce1b029"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#5f442960-f6d8-41ea-bf28-f1322e9eaff1');
+var element = $('#f461be4f-2a57-44df-af77-a24c2ce1b029');
 
 (function(global) {
   function now() {
@@ -10068,6 +10075,23 @@ h6:hover .anchor-link {
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Openstreetmap (OSM) is free, editable map of the world crafted entirely by croudsourcing approach. To build an intution for this wiki-like map, I would like to take an example from the recent earthquake in Nepal. In only 48 hours after the quake, over 2000 volunteers mapper responded to the crisis by quadrupling the road mileage and adding 30% more buildings. OSM is the biggest crowdsourced project ever. However, since the OSM data is human edited, it comes with it's own challenges for cleaning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;img alt="openstreetmap" src="images/openstreetmap.jpg" /&gt;
+&lt;br /&gt;
+&lt;a href="https://www.slideshare.net/mikel_maron/osm-transport"&gt;Image courtesy - Mikel Maron&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;For this case study, I will be exploring the OSM map of Austin, TX. I live in the outskirts of Austin. I love the plethora of outdoor activities the city of Austin has to offer.  I would like to take this opportunity to contribute to OpenStreetMap.org by wrangling the data and parsing it for for SQLite database entry. In the process, I intend to discover new things about Austin.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mapzen.com/data/metro-extracts/metro/austin_texas/"&gt;https://mapzen.com/data/metro-extracts/metro/austin_texas/&lt;/a&gt;&lt;/li&gt;
