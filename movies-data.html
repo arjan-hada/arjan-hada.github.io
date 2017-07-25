@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://arjan-hada.github.io/movies-data.html">
 
         <meta name="author" content="Arjan Hada" />
-        <meta name="keywords" content="python,pandas,regex" />
+        <meta name="keywords" content="python,pandas,regex,Tableau,Dashboards" />
         <meta name="description" content="Project Details You are a business analyst consultant and your client is a new movie production company looking to make a new movie. The client wants to make sure it’s successful to help make a name for the new company. They are relying on you to help understand movie trends to help inform their decision making. They’ve given you guidance to look into three specific areas:" />
 
         <meta property="og:site_name" content="Arjan's Blog" />
@@ -26,6 +26,8 @@
             <meta property="article:tag" content="python" />
             <meta property="article:tag" content="pandas" />
             <meta property="article:tag" content="regex" />
+            <meta property="article:tag" content="Tableau" />
+            <meta property="article:tag" content="Dashboards" />
             <meta property="article:author" content="Arjan Hada" />
 
 
@@ -116,6 +118,10 @@ Arjan's Blog            </a>
 	<a href="https://arjan-hada.github.io/tag/pandas.html">pandas</a>
         /
 	<a href="https://arjan-hada.github.io/tag/regex.html">regex</a>
+        /
+	<a href="https://arjan-hada.github.io/tag/tableau.html">Tableau</a>
+        /
+	<a href="https://arjan-hada.github.io/tag/dashboards.html">Dashboards</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -3421,9 +3427,149 @@ Problem: The <code>genres</code> column consists of multiple genres in the same 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tableau-Data-Visualization">Tableau Data Visualization<a class="anchor-link" href="#Tableau-Data-Visualization">¶</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><a href="https://public.tableau.com/views/movies_novel_story_final/movies_novel_story?:embed=y&amp;:display_count=yes&amp;publish=yes">Q1: How have movies based on novels performed relative to movies not based on novels?</a></strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
+<div class="tableauPlaceholder" id="viz1501003323505" style="position: relative"><noscript><a href="#"><img alt="How have movies based on novels performed relative to movies not based on novels?  " src="https://public.tableau.com/static/images/mo/movies_novel_story_final/movies_novel_story/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="site_root" value="" /><param name="name" value="movies_novel_story_final/movies_novel_story" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/mo/movies_novel_story_final/movies_novel_story/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1501003323505');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_html rendered_html output_subarea ">
+<div class="tableauPlaceholder" id="viz1501003323505" style="position: relative"><noscript><a href="#"><img alt="How have movies based on novels performed relative to movies not based on novels?  " src="https://public.tableau.com/static/images/mo/movies_novel_story_final/movies_novel_story/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="site_root" value="" /><param name="name" value="movies_novel_story_final/movies_novel_story" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/mo/movies_novel_story_final/movies_novel_story/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /></object></div> <script type="text/javascript">                    var divElement = document.getElementById('viz1501003323505');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><a href="https://public.tableau.com/views/HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount?:embed=y&amp;:display_count=yes&amp;publish=yes">Q2: How do the attributes differ between Universal Pictures and Paramount Pictures?</a></strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
+<div class="tableauPlaceholder" id="viz1500765522300" style="position: relative"><noscript><a href="#"><img alt="How do the attributes differ between Universal and Paramount Pictures? " src="https://public.tableau.com/static/images/Ho/HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="site_root" value="" /><param name="name" value="HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/Ho/HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="filter" value="publish=yes" /></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1500765522300');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_html rendered_html output_subarea ">
+<div class="tableauPlaceholder" id="viz1500765522300" style="position: relative"><noscript><a href="#"><img alt="How do the attributes differ between Universal and Paramount Pictures? " src="https://public.tableau.com/static/images/Ho/HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="site_root" value="" /><param name="name" value="HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/Ho/HowdotheattributesdifferbetweenUniversalandParamountPictures/UniversalvsParamount/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="filter" value="publish=yes" /></object></div> <script type="text/javascript">                    var divElement = document.getElementById('viz1500765522300');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><a href="https://public.tableau.com/views/Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime?:embed=y&amp;:display_count=yes&amp;publish=yes">Q3: Question 3: How have movie genres changed over time?</a></strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [3]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
+<div class="tableauPlaceholder" id="viz1500821146454" style="position: relative"><noscript><a href="#"><img alt="How have movie genres changed over time? " src="https://public.tableau.com/static/images/Ho/Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="site_root" value="" /><param name="name" value="Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/Ho/Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="filter" value="publish=yes" /></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1500821146454');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_html rendered_html output_subarea ">
+<div class="tableauPlaceholder" id="viz1500821146454" style="position: relative"><noscript><a href="#"><img alt="How have movie genres changed over time? " src="https://public.tableau.com/static/images/Ho/Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="site_root" value="" /><param name="name" value="Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/Ho/Howhavemoviegenreschangedovertime_1/Howhavemoviegenreschangedovertime/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="filter" value="publish=yes" /></object></div> <script type="text/javascript">                    var divElement = document.getElementById('viz1500821146454');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><a href="https://public.tableau.com/shared/3CTGG26H6?:display_count=yes">Q4: Dashboard to visualize movie based on ratings, budjet, revenue, profit</a></strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [4]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
+<div class="tableauPlaceholder" id="viz1500678096446" style="position: relative"><noscript><a href="#"><img alt="OMDB Movies Dashboard " src="https://public.tableau.com/static/images/3C/3CTGG26H6/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="path" value="shared/3CTGG26H6" /> <param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/3C/3CTGG26H6/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="filter" value="publish=yes" /></object></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1500678096446');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_html rendered_html output_subarea ">
+<div class="tableauPlaceholder" id="viz1500678096446" style="position: relative"><noscript><a href="#"><img alt="OMDB Movies Dashboard " src="https://public.tableau.com/static/images/3C/3CTGG26H6/1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" /> <param name="path" value="shared/3CTGG26H6" /> <param name="toolbar" value="yes" /><param name="static_image" value="https://public.tableau.com/static/images/3C/3CTGG26H6/1.png" /> <param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /><param name="filter" value="publish=yes" /></object></div> <script type="text/javascript">                    var divElement = document.getElementById('viz1500678096446');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><p>1) <a href="http://blog.kaggle.com/2017/01/31/scraping-for-craft-beers-a-dataset-creation-tutorial/">Scraping for craft beers</a>
 <br />
-2) <a href="http://www.jeannicholashould.com/tidy-data-in-python.html">Tidy data in Python</a></p>
+2) <a href="http://www.jeannicholashould.com/tidy-data-in-python.html">Tidy data in Python</a>
+<br />
+3) <a href="https://www.udacity.com/course/data-visualization-in-tableau--ud1006">Data Visualization in Tableau</a>
+<br />
+4) <a href="https://www.tableau.com/learn/training">Tableau training videos</a>
+<br />
+5) <a href="http://www.vizwiz.com/2015/07/sparklines.html">Sparklines</a>
+<br />
+6) <a href="http://www.vizwiz.com/2016/07/tableau-tip-tuesday-how-to-add-vertical.html">Slopegraphs</a>
+<br />
+7) <a href="http://www.vizwiz.com/2017/07/quadrant-chart.html">Quadrant chart</a>
+<br />
+8) <a href="http://www.vizwiz.com/2014/11/kpi-and-sparkline.html">KPIs and Sparklines</a></p>
 </div>
 </div>
 </div>
@@ -3514,46 +3660,28 @@ Problem: The <code>genres</code> column consists of multiple genres in the same 
   <a href="https://arjan-hada.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
   <ul class="list-group " id="tags">
     <li class="list-group-item tag-1">
-      <a href="https://arjan-hada.github.io/tag/pandas.html">pandas</a>
+      <a href="https://arjan-hada.github.io/tag/python.html">python</a>
     </li>
     <li class="list-group-item tag-1">
-      <a href="https://arjan-hada.github.io/tag/python.html">python</a>
+      <a href="https://arjan-hada.github.io/tag/pandas.html">pandas</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://arjan-hada.github.io/tag/statistics.html">statistics</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://arjan-hada.github.io/tag/scikit-learn.html">scikit-learn</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://arjan-hada.github.io/tag/statistics.html">statistics</a>
+      <a href="https://arjan-hada.github.io/tag/tableau.html">Tableau</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/tableau.html">tableau</a>
+      <a href="https://arjan-hada.github.io/tag/dashboards.html">Dashboards</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/binomial-test.html">binomial test</a>
+      <a href="https://arjan-hada.github.io/tag/sign-test.html">sign test</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/machine-learning.html">machine learning</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/data-verification.html">data verification</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/plotly.html">plotly</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/shiny.html">Shiny</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/feature-selection.html">feature selection</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/tidyverse.html">tidyverse</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/r.html">R</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/verifying-machine-learning-performance.html">verifying machine learning performance</a>
+      <a href="https://arjan-hada.github.io/tag/natural-language-processing.html">natural language processing</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/statistical-power.html">statistical power</a>
@@ -3562,40 +3690,61 @@ Problem: The <code>genres</code> column consists of multiple genres in the same 
       <a href="https://arjan-hada.github.io/tag/geojson.html">GeoJSON</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/sql.html">SQL</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/natural-language-processing.html">natural language processing</a>
-    </li>
-    <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/leaflet.html">Leaflet</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/bokeh.html">bokeh</a>
+      <a href="https://arjan-hada.github.io/tag/sql.html">SQL</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/ggvis.html">ggvis</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/ggplot.html">ggplot</a>
+      <a href="https://arjan-hada.github.io/tag/tidyverse.html">tidyverse</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/ab-test.html">A/B test</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/regex.html">regex</a>
+      <a href="https://arjan-hada.github.io/tag/feature-selection.html">feature selection</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/sign-test.html">sign test</a>
+      <a href="https://arjan-hada.github.io/tag/bokeh.html">bokeh</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/ggplot.html">ggplot</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/matplotlib.html">matplotlib</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/data-cleaning.html">data cleaning</a>
+      <a href="https://arjan-hada.github.io/tag/shiny.html">Shiny</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/ggvis.html">ggvis</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/data-verification.html">data verification</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/plotly.html">plotly</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/regex.html">regex</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/r.html">R</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/numpy.html">numpy</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/binomial-test.html">binomial test</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/machine-learning.html">machine learning</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/data-cleaning.html">data cleaning</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/verifying-machine-learning-performance.html">verifying machine learning performance</a>
     </li>
   </ul>
 </li>
