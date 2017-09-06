@@ -5526,15 +5526,8 @@ h6:hover .anchor-link {
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Udacity is considering online experiments to test potential improvements to their website. Two versions of the website are shown to different users - usually the existing website and a potential change. My goal is to design and analyze an A/B test and write up a recommendation on whether Udacity should introduce a new version of the website.&lt;/p&gt;
 &lt;p&gt;The project involves choosing and characterize metrics to evaluate experiments, designing an experiment with enough statistical power, analyzing the results and draw valid conclusions, and ensuring that the participants of experiments are adequately protected.&lt;/p&gt;
-&lt;p&gt;Here is a screenshot of what the experiments look like:-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;a href="https://drive.google.com/file/d/0ByAfiG8HpNUMakVrS0s4cGN2TjQ/view"&gt;&lt;img alt="Free_trial_screener" src="images/experiment_screenshot.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here is a screenshot of what the experiments look like:-
+&lt;img alt="Free trial screener" src="images/experiment_screenshot.png" /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5574,16 +5567,17 @@ h6:hover .anchor-link {
 &lt;p&gt;&lt;strong&gt;Reasons behind metric selection&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Number of cookies will be a good population sizing invariant because it is randomly assigned between control and experiment group.&lt;/li&gt;
-&lt;li&gt;Number of cookies, Number of clicks, and Click-through-probability are measured before free trial screener is triggered, so will be invariant.&lt;/li&gt;
-&lt;li&gt;Gross conversion, Retention and Net conversion can be used as an evaluation metric because the numerator of the metric happens after free trial screener is triggered. &lt;/li&gt;
+&lt;li&gt;Number of cookies, Number of clicks, and Click-through-probability are measured before free trial screener is triggered, so will be &lt;code&gt;invariant&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Gross conversion, Retention and Net conversion can be used as an &lt;code&gt;evaluation metric&lt;/code&gt; because the numerator of the metric happens after free trial screener is triggered. &lt;/li&gt;
 &lt;li&gt;These are the metric that Udacity is trying to track in this experiment. By adding free trial screener after Start Free Trial button, the experiment could affect the number of user-ids to complete checkout. &lt;/li&gt;
+&lt;li&gt;Number of user-id is the number of users who enroll in the free trial. It cannot be used as an invariant metric or evaluation metric. User-ids are only tracked only after a student enrolls in the free trial and will not be equally distributed between the control and experimental groups. Hence it cannot be used as an invariant metric. It is essentially number of enrollments and is a raw count. We cannot adjust raw count to differences in group sizes and we are already using Gross conversion to measure the impact on enrollments that can normalize. Gross conversion is more robust than number of user IDs since it is normalized to the unit of diversion. So I opted not to use Number of user-id as evaluation metric either.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt; Results to look for in order to launch the experiment&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; Results to look for in order to launch the experiment&lt;/strong&gt;
+&lt;br /&gt;
+Our experimental goals are (1) to reduce enrollments by unprepared students (2) without significantly reducing the number of students who complete the free trial and make at least one payment.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Our evaluation metrics need to be both statistically and practically significant. In other words, we need to be confident that the true difference between experimental and control group is at least what is required to declare practical significance.&lt;/li&gt;
-&lt;li&gt;Since the workload expectations have been set upfront, number of students completing the checkout might go down, so the Gross conversion will decrease.&lt;/li&gt;
-&lt;li&gt;We would expect the Retention to increase.&lt;/li&gt;
-&lt;li&gt;Net conversion might go down, however, it is hard to predict beforehand.&lt;/li&gt;
+&lt;li&gt;Goal 1 can be achieved by a decrease in Gross conversion. Since the workload expectations have been set upfront, we expect the number of students completing the checkout to go down and the Gross conversion to decrease. &lt;/li&gt;
+&lt;li&gt;Goal 2 can be achieved by an increase or no change in Retention and Net conversion.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5730,7 +5724,7 @@ h6:hover .anchor-link {
 &lt;/table&gt;
 &lt;p&gt;If we divert 100% of Udacity’s traffic, the experiment will still run for 119 days. This is an unreasonably long time.
 However, if we drop Retention and just measure Net conversion and Gross conversion, the experiment can be run in 18 days with enough pageviews to adequately power the experiment.&lt;/p&gt;
-&lt;p&gt;The experiment constitutes a minimal risk to both students and Udacity. Entire traffic can be directed to this experiment if there are no other parallel experiment. Even if we divert 50% of Udacity's traffic the experiment can be done in 36 days.&lt;/p&gt;
+&lt;p&gt;The experiment constitutes a minimal risk to both students and Udacity. 1. There is no chance that anyone gets hurt because of the duration of our experiment. 2. We are not dealing with sensitive data - political attitudes, personal disease history, sexual preferences etc. Entire traffic can be directed to this experiment if there are no other parallel experiment. Even if we divert 50% of Udacity's traffic the experiment can be done in 36 days.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5816,14 +5810,6 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style="text-align:center"&gt;Retention&lt;/td&gt;
-&lt;td style="text-align:center"&gt;0.008104&lt;/td&gt;
-&lt;td style="text-align:center"&gt;0.05409&lt;/td&gt;
-&lt;td style="text-align:center"&gt;0.03109&lt;/td&gt;
-&lt;td style="text-align:center"&gt;Yes&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td style="text-align:center"&gt;Net conversion&lt;/td&gt;
 &lt;td style="text-align:center"&gt;-0.01160&lt;/td&gt;
 &lt;td style="text-align:center"&gt;0.001857&lt;/td&gt;
@@ -5841,7 +5827,8 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Statistical significance was determined based on whether or not the Confidence interval bound contained 0. Practical significance was determined based on minimum detectable effect ($d_{min}$) parameter.&lt;/p&gt;
+&lt;p&gt;Statistical significance was determined based on whether or not the Confidence interval bound contained 0. Practical significance was determined based on minimum detectable effect ($d_{min}$) parameter. The $d_{min}$ for Gross conversion was set at 0.01 and for Net conversion was set at 0.0075.
+For Gross conversion, our observed value is more than two below the practical significance boundary, and the confidence interval does not include zero. Hence, Gross conversion is both statistically and practically significant. However, for Net Conversion our observed value is well within the boundaries of practical significance, and confidence interval includes a zero. Hence, Net conversion is neither statistically nor practically significant.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5866,26 +5853,23 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;th style="text-align:center"&gt;# days with positive change&lt;/th&gt;
 &lt;th style="text-align:center"&gt;# days&lt;/th&gt;
 &lt;th style="text-align:center"&gt;two-tail P value&lt;/th&gt;
+&lt;th style="text-align:center"&gt;Statistical Significance&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style="text-align:center"&gt;Retention&lt;/td&gt;
-&lt;td style="text-align:center"&gt;13&lt;/td&gt;
-&lt;td style="text-align:center"&gt;23&lt;/td&gt;
-&lt;td style="text-align:center"&gt;0.6776&lt;/td&gt;
-&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style="text-align:center"&gt;Net conversion&lt;/td&gt;
 &lt;td style="text-align:center"&gt;10&lt;/td&gt;
 &lt;td style="text-align:center"&gt;23&lt;/td&gt;
 &lt;td style="text-align:center"&gt;0.6776&lt;/td&gt;
+&lt;td style="text-align:center"&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style="text-align:center"&gt;Gross conversion&lt;/td&gt;
 &lt;td style="text-align:center"&gt;4&lt;/td&gt;
 &lt;td style="text-align:center"&gt;23&lt;/td&gt;
 &lt;td style="text-align:center"&gt;0.0026&lt;/td&gt;
+&lt;td style="text-align:center"&gt;Yes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -5905,11 +5889,18 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We did not use Bonferroni correction for sign test because we were only measuring one metric at a time.&lt;/p&gt;
+&lt;p&gt;We did not use Bonferroni correction for sign test.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To propose our recommendations we need to consider both the net and gross conversion. We want both metrics to match our expectations (we look for a decrease in gross conversion and for a increase in the net conversion). We are in a situation where ALL metrics need to match our expectations in order to launch the change. &lt;/li&gt;
+&lt;li&gt;This is not the same as the case where ANY metric needs to match the expectations. In fact, it is the exact opposite. &lt;/li&gt;
+&lt;li&gt;False negatives have the greatest impact when ALL metrics must be satisfied to trigger launch, since a single false negative can govern the decision.&lt;/li&gt;
+&lt;li&gt;False positives have the greatest impact when ANY metrics satisfied can trigger launch, since a single false positive will govern the decision.&lt;/li&gt;
+&lt;li&gt;The Bonferroni correction controls for false positives at the expense of power, or increased false negatives. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For Net conversion both the Effect size test and Sign test are not statistically significant whereas for Gross conversion both the tests are statistically significant.&lt;/p&gt;
 &lt;p&gt;The effect size test for Retention is statistically significant, whereas sign test is not. There are two possible reasons. 
 1)  We did not run the experiment long enough to have adequate page views, and hence enough Power for this metric.
 2)  Sign test is a non-parametric test and has lower power than the effect size test.&lt;/p&gt;
-&lt;p&gt;Effect size test and sign test for Net conversion are not statistically significant whereas for Gross conversion both the tests are statistically significant.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5925,7 +5916,11 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;There was a statistically and practically significant decrease in Gross conversion, but no significant change in Net conversion. The "free trial screener" decreased the number of students who completed checkout, but did not affect the number of students who remain enrolled past 14 days boundary. My recommendation will be to not launch the change.&lt;/p&gt;
+&lt;p&gt;My recommendation will be to not launch the change.&lt;/p&gt;
+&lt;p&gt;We had to achieve two objectives in order to launch the change - 1) reduce the number of frustrated students who left the free trial because they didn't have enough time 2) without significantly reducing the number of students who complete the free trial and make at least one payment.&lt;/p&gt;
+&lt;p&gt;1) There was a statistically and practically significant decrease in Gross conversion. It is behaving like expected. The "free trial screener" decreased the number of students who completed check out because the expectations were set up front.&lt;/p&gt;
+&lt;p&gt;2) However, the Net conversion was neither statistically nor practically significant. It isn't behaving like we expected in order to launch the change. Even more, the lower bound of the confidence interval is below the negative boundary of the practical significance. It's possible that this number went down and reduced the number of students who complete the free trial and make at least one payment. This is not desirable.
+&lt;img alt="Net conversion image" src="images/net_conversion.png" /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5942,28 +5937,20 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Udacity can test a change where they add a “&lt;strong&gt;Book Welcome Videochat&lt;/strong&gt;” button after enrolling in the course. So, if the student clicks Start free trial and subsequently checkout and enroll, they will be required to attend a video chat appointment with a Udacity coach within the first 14 days free trial.&lt;/p&gt;
+&lt;p&gt;Udacity can test a change where they add a “&lt;strong&gt;Book Welcome Videochat&lt;/strong&gt;” button after enrolling in the course. So, if the student clicks Start free trial and subsequently check out and enroll, they will be required to attend a video chat appointment with a Udacity coach within the first 14 days free trial.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;hypothesis&lt;/strong&gt; is that talking to Udacity coach will provide student with a personal touch, boost student morale’s, set clear expectations about the course and benefits of completing the course with past examples. If the hypothesis is held true Udacity will boost student’s enthusiasm and provide momentum to complete the course.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;unit of diversion&lt;/strong&gt; will be user-id because the experiment is being done after student enrolls in the course. We want each student to have consistent experience independent of platform and device. The same user-id cannot book video chat appointment twice.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;unit of diversion&lt;/strong&gt; will be user-id because the experiment is being done after the student enrolls in the course. We want each student to have consistent experience independent of platform and device. The same user-id cannot book video chat appointment twice.&lt;/p&gt;
+&lt;p&gt;The experiment that takes place after enrollment, so cookie and click based metrics are not relevant since we are already past that point in the funnel. Those metrics are as well less stable than the ones that are based on the user_IDs, which should be chosen here.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Invariant metrics&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;a) Number of cookies&lt;/li&gt;
-&lt;li&gt;b) Number of clicks&lt;/li&gt;
-&lt;li&gt;c) Click-through-probability&lt;/li&gt;
-&lt;li&gt;d) Number of user-ids&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;e) Gross conversion&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;User-ids are being explicitly randomized between control and experiment group. One user-id can correspond to multiple cookies, so cookies should be split evenly as well. User-id and cookies will serve as good population sizing invariant.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Number of clicks, Click-through-probability, and Gross conversion is all measured before our experiment and hence should be invariant metrics.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Number of user-ids&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;User-ids are being explicitly randomized between control and experiment group. User-id will serve as good population sizing invariant.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Evaluation metrics&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;a) Retention&lt;/li&gt;
-&lt;li&gt;b) Net conversion&lt;/li&gt;
+&lt;li&gt;Retention&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Retention and Net conversion are the metrics that Udacity is trying to measure in this experiment. The experiment will affect the number of user-ids to remain enrolled past the 14-day boundary.&lt;/p&gt;
+&lt;p&gt;Retention is the metrics that Udacity is trying to measure in this experiment. The experiment will affect the number of user-ids to remain enrolled past the 14-day boundary.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5978,19 +5965,7 @@ However, if we drop Retention and just measure Net conversion and Gross conversi
 &lt;p&gt;5) &lt;a href="http://stats.stackexchange.com/questions/26088/explaining-to-laypeople-why-bootstrapping-works"&gt;Bootstrap explained&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;script&gt;
-  $(document).ready(function(){
-    $('div.prompt').hide();
-    $('div.back-to-top').hide();
-    $('nav#menubar').hide();
-    $('.breadcrumb').hide();
-    $('.hidden-print').hide();
-  });
-&lt;/script&gt;
-&lt;footer id="attribution" style="float:right; color:#999; background:#fff;"&gt;
-&lt;p&gt;June 11, 2016&lt;/p&gt;
-&lt;p&gt;Contact author: &lt;a href="mailto:hadaarjan@gmail.com"&gt;hadaarjan@gmail.com&lt;/a&gt;&lt;/p&gt;
-&lt;/footer&gt;
+&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
@@ -7774,10 +7749,10 @@ $$fraction\_from\_poi =\frac{number\ of\ emails\ from\ POI\ to\ this\ person}{to
 &lt;/div&gt;
 &lt;div class="output_area"&gt;
 &lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div id="e938dec0-eb3f-46e9-8f26-a601c56c3f2b"&gt;&lt;/div&gt;
+&lt;div id="859c8a84-695c-4960-89d8-16d9af01e7e8"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#e938dec0-eb3f-46e9-8f26-a601c56c3f2b');
+var element = $('#859c8a84-695c-4960-89d8-16d9af01e7e8');
 
 (function(global) {
   function now() {
@@ -8896,8 +8871,9 @@ print best_clf&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;strong&gt;Validation&lt;/strong&gt; is the strategy to evaluate the performance of the model on unseen data. A classic mistake is to evaluate the performance of an algorithm on the same dataset it was trained on. It will make our algorithm perform better than it actually does. This is called &lt;strong&gt;overfitting&lt;/strong&gt;. However, we will have no idea how our algorithm performs on unseen data. We want an algorithm that generalizes well to new data.&lt;/p&gt;
-&lt;p&gt;We can avoid overfitting by randomly splitting our data into training and testing set. This is called crossvalidation. However, with a small dataset like ours, we run into the dilemma of maximizing the training set vs test set. So, I ended up using &lt;a href="http://scikit-learn.org/stable/modules/cross_validation.html"&gt;&lt;strong&gt;StratifiedShuffleSplit&lt;/strong&gt;&lt;/a&gt;. StratifiedShuffleSplit will make randomly chosen training and test sets multiple times and average the results over all the tests. Data is first shuffled and then split into a pair of training and test sets. Stratification ensures training and test splits have class distribution (POI:Non-POI) that represents the overall data. Stratification is well suited in our case because of class imbalance (18 POI vs 128 Non-POI).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Validation&lt;/strong&gt; is the strategy to evaluate the performance of the model on unseen data. A classic mistake is to evaluate the performance of an algorithm on the same dataset it was trained on. It will make our algorithm perform better than it actually does. However, we will have no idea how our algorithm performs on unseen data.&lt;/p&gt;
+&lt;p&gt;It is essential practice in data mining procedures to keep a subset of data as holdout data- test data. We train our model on training data and examine the &lt;em&gt;generalization performance&lt;/em&gt; of the model on the test data. We hide the label for target variable of the test data from the model and let the model predict the values for target variable. Then we compare the values predicted by the model with the hidden true values. We can also use a more sophisticated holdout training and testing procedure called cross-validation.&lt;/p&gt;
+&lt;p&gt;In our case, I used a variation of k-fold cross-validation called &lt;a href="http://scikit-learn.org/stable/modules/cross_validation.html"&gt;&lt;strong&gt;StratifiedShuffleSplit&lt;/strong&gt;&lt;/a&gt;. StratifiedShuffleSplit will make randomly chosen training and test sets multiple times and average the results over all the tests. Data is first shuffled and then split into a pair of training and test sets. Stratification ensures training and test splits have class distribution (POI:Non-POI) that represents the overall data. Stratification is well suited in our case because of class imbalance (18 POI vs 128 Non-POI).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;

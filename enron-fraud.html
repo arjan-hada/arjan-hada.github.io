@@ -1877,10 +1877,10 @@ $$fraction\_from\_poi =\frac{number\ of\ emails\ from\ POI\ to\ this\ person}{to
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div id="e938dec0-eb3f-46e9-8f26-a601c56c3f2b"></div>
+<div id="859c8a84-695c-4960-89d8-16d9af01e7e8"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#e938dec0-eb3f-46e9-8f26-a601c56c3f2b');
+var element = $('#859c8a84-695c-4960-89d8-16d9af01e7e8');
 
 (function(global) {
   function now() {
@@ -2999,8 +2999,9 @@ print best_clf</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Validation</strong> is the strategy to evaluate the performance of the model on unseen data. A classic mistake is to evaluate the performance of an algorithm on the same dataset it was trained on. It will make our algorithm perform better than it actually does. This is called <strong>overfitting</strong>. However, we will have no idea how our algorithm performs on unseen data. We want an algorithm that generalizes well to new data.</p>
-<p>We can avoid overfitting by randomly splitting our data into training and testing set. This is called crossvalidation. However, with a small dataset like ours, we run into the dilemma of maximizing the training set vs test set. So, I ended up using <a href="http://scikit-learn.org/stable/modules/cross_validation.html"><strong>StratifiedShuffleSplit</strong></a>. StratifiedShuffleSplit will make randomly chosen training and test sets multiple times and average the results over all the tests. Data is first shuffled and then split into a pair of training and test sets. Stratification ensures training and test splits have class distribution (POI:Non-POI) that represents the overall data. Stratification is well suited in our case because of class imbalance (18 POI vs 128 Non-POI).</p>
+<p><strong>Validation</strong> is the strategy to evaluate the performance of the model on unseen data. A classic mistake is to evaluate the performance of an algorithm on the same dataset it was trained on. It will make our algorithm perform better than it actually does. However, we will have no idea how our algorithm performs on unseen data.</p>
+<p>It is essential practice in data mining procedures to keep a subset of data as holdout data- test data. We train our model on training data and examine the <em>generalization performance</em> of the model on the test data. We hide the label for target variable of the test data from the model and let the model predict the values for target variable. Then we compare the values predicted by the model with the hidden true values. We can also use a more sophisticated holdout training and testing procedure called cross-validation.</p>
+<p>In our case, I used a variation of k-fold cross-validation called <a href="http://scikit-learn.org/stable/modules/cross_validation.html"><strong>StratifiedShuffleSplit</strong></a>. StratifiedShuffleSplit will make randomly chosen training and test sets multiple times and average the results over all the tests. Data is first shuffled and then split into a pair of training and test sets. Stratification ensures training and test splits have class distribution (POI:Non-POI) that represents the overall data. Stratification is well suited in our case because of class imbalance (18 POI vs 128 Non-POI).</p>
 </div>
 </div>
 </div>
@@ -3400,70 +3401,58 @@ EYmYgriISMQUxEVEIqYgLiISMQVxEZGI/T+LUwhI3O0LNAAAAABJRU5ErkJggg==
       <a href="https://arjan-hada.github.io/tag/pandas.html">pandas</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://arjan-hada.github.io/tag/tableau.html">Tableau</a>
+      <a href="https://arjan-hada.github.io/tag/scikit-learn.html">scikit-learn</a>
     </li>
     <li class="list-group-item tag-2">
-      <a href="https://arjan-hada.github.io/tag/scikit-learn.html">scikit-learn</a>
+      <a href="https://arjan-hada.github.io/tag/tableau.html">Tableau</a>
     </li>
     <li class="list-group-item tag-2">
       <a href="https://arjan-hada.github.io/tag/statistics.html">statistics</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/verifying-machine-learning-performance.html">verifying machine learning performance</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/binomial-test.html">binomial test</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/leaflet.html">Leaflet</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/machine-learning.html">machine learning</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/statistical-power.html">statistical power</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/sql.html">SQL</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/numpy.html">numpy</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/natural-language-processing.html">natural language processing</a>
-    </li>
-    <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/tidyverse.html">tidyverse</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/data-cleaning.html">data cleaning</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/r.html">R</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/regex.html">regex</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/feature-selection.html">feature selection</a>
-    </li>
-    <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/dashboards.html">Dashboards</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/shiny.html">Shiny</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/geojson.html">GeoJSON</a>
-    </li>
-    <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/data-verification.html">data verification</a>
+      <a href="https://arjan-hada.github.io/tag/sql.html">SQL</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/sign-test.html">sign test</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/matplotlib.html">matplotlib</a>
+      <a href="https://arjan-hada.github.io/tag/data-cleaning.html">data cleaning</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/geojson.html">GeoJSON</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/numpy.html">numpy</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/ggplot.html">ggplot</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/statistical-power.html">statistical power</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/machine-learning.html">machine learning</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/bokeh.html">bokeh</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/r.html">R</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/natural-language-processing.html">natural language processing</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/verifying-machine-learning-performance.html">verifying machine learning performance</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/ab-test.html">A/B test</a>
@@ -3472,13 +3461,25 @@ EYmYgriISMQUxEVEIqYgLiISMQVxEZGI/T+LUwhI3O0LNAAAAABJRU5ErkJggg==
       <a href="https://arjan-hada.github.io/tag/plotly.html">plotly</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/bokeh.html">bokeh</a>
+      <a href="https://arjan-hada.github.io/tag/data-verification.html">data verification</a>
     </li>
     <li class="list-group-item tag-4">
-      <a href="https://arjan-hada.github.io/tag/ggplot.html">ggplot</a>
+      <a href="https://arjan-hada.github.io/tag/feature-selection.html">feature selection</a>
     </li>
     <li class="list-group-item tag-4">
       <a href="https://arjan-hada.github.io/tag/ggvis.html">ggvis</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/leaflet.html">Leaflet</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/binomial-test.html">binomial test</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/shiny.html">Shiny</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://arjan-hada.github.io/tag/matplotlib.html">matplotlib</a>
     </li>
   </ul>
 </li>
